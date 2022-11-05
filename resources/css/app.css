@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Coolvetica";
+    src: url("../../public/font/coolvetica_rg.otf");
+}
+@font-face {
+    font-family: "CoolveticaItalic";
+    src: url("../../public/font/coolvetica_rg_it.otf");
+}
+@font-face {
+    font-family: "EvolveThin";
+    src: url("../../public/font/EvolveSansThin.otf");
+}
+@font-face {
+    font-family: "EvolveLight";
+    src: url("../../public/font/EvolveSansLight.otf");
+}
+@font-face {
+    font-family: "EvolveRegular";
+    src: url("../../public/font/EvolveSansRegular.otf");
+}
+@font-face {
+    font-family: "EvolveMedium";
+    src: url("../../public/font/EvolveSansMedium.otf");
+}
+@font-face {
+    font-family: "EvolveBold";
+    src: url("../../public/font/EvolveSansBold.otf");
+}
+@font-face {
+    font-family: "MontserratBold";
+    src: url("../../public/font/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: "MontserratRegular";
+    src: url("../../public/font/Montserrat-Regular.ttf");
+}
