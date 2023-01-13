@@ -11,11 +11,14 @@ Meningkatnya mahasiswa kutai timur yang berkuliah di ***Surabaya***, kami pengur
 ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
 ## Fitur
-- Landing Page
+- **Landing Page**
+
 ![LandingPage](https://media.discordapp.net/attachments/865989229862453288/1063492930054127626/image.png?width=939&height=470)
-- Halaman Berita
+- **Halaman Berita**
+
 ![HalamanBerita](https://media.discordapp.net/attachments/865989229862453288/1063498318770081883/image.png?width=939&height=493)
-- Halaman Registrasi Mahasiswa
+- **Halaman Registrasi Mahasiswa**
+
 ![HalamanRegistrasiMahasiswa](https://media.discordapp.net/attachments/865989229862453288/1063493023452905532/image.png?width=939&height=470)
 - **Admin**
     - Login/logut
@@ -23,7 +26,36 @@ Meningkatnya mahasiswa kutai timur yang berkuliah di ***Surabaya***, kami pengur
     - Membuat Berita
     - Melihat semua data mahasiswa yang telah melakukan registrasi
 
+## Instalasi
+untuk menjalan aplikasi ini, dibutuhkan sedikit configurasi agar dapat di jalankan pada local server.
 
+buka terminal seperti bash, zsh, command prompt atau powershell dan nstall dependency composer dengan command berikut
+```
+composer install && composer update
+```
+Lanjut, copy file `.env.example` dengan nama `.env`
+Kemudian, silahkan ganti credentials database di file `.env` nya seperti ini:
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=xxx
+DB_USERNAME=root
+DB_PASSWORD=
+```
+Kemudian, silahkan migrate semua database di project ini dengan menggunakan artisan command:
+```
+php artisan migrate
+```
+Install dependencies nodejs didalam folder `node_modules`:
+```
+npm install && npm run dev
+```
+Langkah Terakhir, silahkan jalankan local development server Laravel dengan menggunakan artisan command sebagai berikut:
+```
+php artisan serve
+```
+Project ini akan berjalan di `https://localhost:8080`.
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
